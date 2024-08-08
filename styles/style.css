@@ -297,7 +297,7 @@ section p,
 .bmi-chart{
 	max-width:310px;
 }
-.bmi-chart h4, .bmi-calculate h4{
+.bmi-chart h4, .bmi-calculate h4, .price-details h4{
 	font-size: 1.75rem;
 	font-weight: 900;
 	color: rgba(255, 255, 255, 1);
@@ -346,7 +346,7 @@ section p,
 	grid-column: span 2;
 }
 /* Team Member style */
-.team-headings{
+.team-headings, .Plans-headings{
   text-align: center;
   padding: 20px 0;
 }
@@ -378,7 +378,7 @@ section p,
   left:19px;
 
 }
-.member-details h5{
+.member-details h5 , .price-details h5{
   color: rgba(255, 255, 255, 1);
   font-size: 1.25rem;
   font-weight:900;
@@ -388,6 +388,33 @@ section p,
   font-size: 14px;
   color: rgba(255, 255, 255, 0.5);
   font-weight: 400;
+}
+/* price & plan */
+.plan-cards{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap:24px;
+	text-align: center;
+	margin-bottom:60px;
+	
+}
+ .price-card{
+	border-radius:8px;
+	max-width:540px !important;
+	padding: .5rem;
+	background-color: rgba(255, 255, 255, 0.1);
+	border: none;
+	box-shadow: 2px 3px 5px 0 rgba(230 83 0.1);
+}
+.price-details h3{
+	color:#e6533c;
+	font-size: 1.75rem;
+	
+}
+.price-details p{
+	border-top:  1px solid rgba(230, 84, 0, 0.396);
+	padding: 6px 0;
+	
 }
 
 /* Footer section style */
@@ -449,12 +476,12 @@ footer .reserved p {
 	.run,
 	.bmi,
 	.footer-container,
-	.footer-list {
+	.footer-list,
+	.plan-cards{
 		flex-direction: column;
 		grid-template-columns: repeat(1, 1fr);
 		gap: 24px;
 	}
-
 	.banner-title {
 		max-width: 285px;
 		font-size: 2.25rem;
