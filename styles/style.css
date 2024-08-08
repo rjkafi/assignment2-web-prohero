@@ -405,8 +405,13 @@ footer {
 }
 
 .footer-list {
+	max-width:620px;
 	display: flex;
-	gap: 140px;
+	justify-content: space-between;
+	gap: 20px;
+}
+.list-item{
+	width: 282px;
 }
 
 footer .list-item h5 {
