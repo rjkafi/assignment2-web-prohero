@@ -18,7 +18,7 @@
 .menu-bars {
 	display: none;
 	color: #fff;
-	font-size: 40px;
+	font-size:30px;
 }
 
 body {
@@ -290,18 +290,18 @@ section p,
 	justify-content: space-between;
 	gap: 170px;
 	padding: 49px 0;
+	justify-content: center;
+	align-items: center;
 }
-.bmi-calculate{
-	max-width: 576px;
+/* bmi chart */
+.bmi-chart{
+	max-width:310px;
 }
-
-.bmi-calculate h4,
-.bmi-chart h4 {
+.bmi-chart h4, .bmi-calculate h4{
 	font-size: 1.75rem;
-	font-weight:900;
+	font-weight: 900;
 	color: rgba(255, 255, 255, 1);
 }
-
 .bmi table {
 	text-align: justify;
 	border-collapse: collapse;
@@ -323,26 +323,27 @@ section p,
 	font-size: 14px;
 	color: rgba(255, 255, 255, 0.5);
 }
-
-.input-form form {
-	margin-bottom: 34px;
+/* bmi calculate */
+.bmi-calculate{
+	max-width: 577px;
+}
+.input-form{
 	display: grid;
-	grid-template-columns:repeat(2,1fr);
-	gap:10px;
-	margin-top: 10px;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+	margin-top:34px;
+	margin-bottom:34px;
 	
 }
-.input-form form input{
-	padding:18px;
+.input-form input, .input-form select{
+	padding:13px;
 	background-color: rgba(255, 255, 255, 0.1);
 	border-radius: 8px;
-	border-bottom: none;
-	border-right: none;
-
+	border: none;
+	color:rgba(255, 255, 255, 0.6) ;
 }
-
-.input-form form .input-full{
-	width :189%;
+#activity{
+	grid-column: span 2;
 }
 /* Team Member style */
 .team-headings{
@@ -476,8 +477,8 @@ footer .reserved p {
 	.calculator-headings {
 		margin: 42px 0px;
 	}
-	.input-form form .input-full{
-		width: 185%;
-	}
+	
+	
+	
 
 }
