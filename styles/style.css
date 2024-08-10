@@ -292,22 +292,23 @@ section p,
 }
 
 .bmi {
-	display: flex;
-	justify-content: space-between;
-	gap: 170px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 40px;
 	padding: 49px 0;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
 }
 /* bmi chart */
 .bmi-chart{
-	max-width:310px;
+	/* max-width:310px; */
+	max-width: 440px;
 }
 .bmi-chart h4, .bmi-calculate h4, .price-details h4{
 	font-size: 1.75rem;
 	font-weight: 900;
 	color: rgba(255, 255, 255, 1);
-	margin: .7rem 0;
+	padding: .7rem 0;
 }
 .bmi table {
 	text-align: justify;
@@ -332,14 +333,15 @@ section p,
 }
 /* bmi calculate */
 .bmi-calculate{
-	max-width: 577px;
+	max-width: 100%;
 }
+
 .input-form{
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(2, 48.5%);
 	gap: 10px;
-	margin-top:34px;
-	margin-bottom:34px;
+	margin:2rem 0;
+	
 	
 }
 .input-form input, .input-form select{
@@ -348,6 +350,7 @@ section p,
 	border-radius: 8px;
 	border: none;
 	color:rgba(255, 255, 255, 0.6) ;
+	
 }
 #activity{
 	grid-column: span 2;
@@ -428,25 +431,29 @@ section p,
 /* Footer section style */
 footer {
 	background-color: rgba(255, 255, 255, 0.1);
+	
 }
 
 .footer-container {
+	max-width:90%;
 	display: flex;
-	max-width: 90%;
-	margin: 0 auto;
 	padding: 66px 0;
+	margin: 0 auto;
 	gap: 100px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+.footer-content{
+	max-width: 443px;
+}
 
 .footer-list {
-	max-width:620px;
-	display: flex;
-	justify-content: space-between;
-	gap: 20px;
+	max-width:514px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap:150px;
 }
 .list-item{
-	width: 282px;
+	max-width:181px ;
 }
 
 footer .list-item h5 {
@@ -514,10 +521,7 @@ footer .reserved p {
 		margin-left: -4px;
 		margin-top: -178px;
 	}
-
-	.calculator-headings {
-		margin: 42px 0px;
-	}
+	 
 	
 	
 	
