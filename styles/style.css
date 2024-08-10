@@ -292,17 +292,16 @@ section p,
 }
 
 .bmi {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	display:flex;
+	
 	gap: 40px;
 	padding: 49px 0;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 }
 /* bmi chart */
 .bmi-chart{
-	/* max-width:310px; */
-	max-width: 440px;
+	max-width:310px;
 }
 .bmi-chart h4, .bmi-calculate h4, .price-details h4{
 	font-size: 1.75rem;
@@ -333,11 +332,13 @@ section p,
 }
 /* bmi calculate */
 .bmi-calculate{
-	max-width: 100%;
+	max-width:100%;
 }
 
 .input-form{
 	display: grid;
+	justify-content: center;
+	align-items: center;
 	grid-template-columns: repeat(2, 48.5%);
 	gap: 10px;
 	margin:2rem 0;
@@ -350,6 +351,7 @@ section p,
 	border-radius: 8px;
 	border: none;
 	color:rgba(255, 255, 255, 0.6) ;
+	
 	
 }
 #activity{
